@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>صفحه تماس</title>
+  </head>
+  <body>
+    <h1>فرم تماس با ما</h1>
+    <form method="post" action="{% url 'contact' %}">
+      {% csrf_token %} {{ form.as_p }}
+      <button type="submit">ارسال</button>
+    </form>
+  </body>
+</html>
