@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>پیام جدید از فرم تماس</title>
+    <style>
+      body {
+        font-family: "Helvetica Neue", Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 20px;
+      }
+      .container {
+        max-width: 600px;
+        margin: auto;
+        background: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+      }
+      .header {
+        background-color: #4caf50;
+        color: #ffffff;
+        padding: 20px;
+        text-align: center;
+      }
+      .content {
+        padding: 20px;
+        color: #555;
+      }
+      .message {
+        background-color: #f9f9f9;
+        border-left: 4px solid #4caf50;
+        padding: 10px;
+        margin: 20px 0;
+        font-size: 16px;
+        color: #333;
+      }
+      .footer {
+        background-color: #f1f1f1;
+        padding: 10px;
+        text-align: center;
+        color: #777;
+        border-top: 1px solid #eaeaea;
+      }
+      .footer p {
+        margin: 5px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>پیام جدید از {{ name }}</h1>
+      </div>
+      <div class="content">
+        <p style="font-size: 18px">
+          ایمیل: <strong style="color: #4caf50">{{ email }}</strong>
+        </p>
+        <p style="font-size: 18px">پیام:</p>
+        <p class="message">{{ message }}</p>
+      </div>
+      <div class="footer">
+        <p>با تشکر،</p>
+        <p>تیم پشتیبانی</p>
+      </div>
+    </div>
+  </body>
+</html>
